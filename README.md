@@ -11,3 +11,4 @@ You can look up to the directories above or click the link below!
 7. [Slicing List](https://github.com/hanamian/Python_Exercises/blob/master/7.%20Slicing%20List.md)
 8. [Combine List](https://github.com/hanamian/Python_Exercises/blob/master/8.%20Combine%20List.md)
 9. [Nested List](https://github.com/hanamian/Python_Exercises/blob/master/9.%20Nested%20List.md)
+10. [Sorting List Elements and Get The Max Value](https://github.com/hanamian/Python_Exercises/blob/master/10.%20%20Sorting%20List%20Elements%20and%20Get%20The%20Max%20Value.md)
