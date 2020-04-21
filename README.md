@@ -9,3 +9,4 @@ You can look up to the directories above or click the link below!
 5. [Create Your First and Last Name](https://github.com/hanamian/Python_Exercises/blob/master/5.%20Create%20Your%20First%20and%20Last%20Name.md)
 6. [Convert Int to String Value to be Printed](https://github.com/hanamian/Python_Exercises/blob/master/6.%20Convert%20Int%20to%20String%20Value%20to%20be%20Printed.md)
 7. [Slicing List](https://github.com/hanamian/Python_Exercises/blob/master/7.%20Slicing%20List.md)
+8. [Combine List](https://github.com/hanamian/Python_Exercises/blob/master/8.%20Combine%20List.md)
