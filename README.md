@@ -7,5 +7,5 @@ You can look up to the directories above or click the link below!
 3. [Sum the Array Elements then Find Its Max and Min Value](https://github.com/hanamian/Python_Exercises/blob/master/2.%20Sum%20the%20Array%20Elements%20then%20Find%20Its%20Max%20and%20Min%20Value.md)
 4. [Division Results in Int and Float Types](https://github.com/hanamian/Python_Exercises/blob/master/4.%20Division%20Result%20in%20Int%20and%20Float%20Type.md)
 5. [Create Your First and Last Name](https://github.com/hanamian/Python_Exercises/blob/master/5.%20Create%20Your%20First%20and%20Last%20Name.md)
-6.
+6. [Convert Int to String Value to be Printed](https://github.com/hanamian/Python_Exercises/blob/master/6.%20Convert%20Int%20to%20String%20Value%20to%20be%20Printed.md)
 7. [Slicing List](https://github.com/hanamian/Python_Exercises/blob/master/7.%20Slicing%20List.md)
