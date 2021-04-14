@@ -14,6 +14,12 @@ if n%2==0 and (n in range (2,6) or n>20):
 else:
     print('Weird')
 ```
+```
+input:
+3
+
+output:
+Weird
 
 # No. 2
 The provided code stub reads and integer, n, from STDIN. For all non-negative integers i<n, print i^2
@@ -29,9 +35,9 @@ for i in range(n):
     print i**2
 ```
 ```
-input = 5
-```
-```
+input:
+5
+
 output:
 0
 1
