@@ -1,7 +1,7 @@
 # Dictionary
 ---
 ### No. 1
-Create dictionary
+**Create dictionary**
 ```python
 countries = ['spain', 'france', 'germany', 'norway']
 capitals = ['madrid', 'paris', 'berlin', 'oslo']
@@ -17,7 +17,7 @@ Result:
 ```
 ---
 ### No. 2
-Access keys and specific values of dictionary
+**Access keys and specific values of dictionary**
 ```python
 europe = {'spain':'madrid', 'france':'paris', 'germany':'berlin', 'norway':'oslo' }
 
@@ -34,7 +34,7 @@ oslo
 ```
 ---
 ### No. 3
-Add elements in dictionary
+**Add elements in dictionary**
 ```python
 europe = {'spain':'madrid', 'france':'paris', 'germany':'berlin', 'norway':'oslo' }
 
@@ -52,7 +52,7 @@ rome
 ```
 ---
 ### No. 4
-Add elements in dictionary
+**Add and Find elements in dictionary**
 ```python
 europe = {'spain':'madrid', 'france':'paris', 'germany':'berlin', 'norway':'oslo' }
 
@@ -72,7 +72,7 @@ rome
 ```
 ---
 ### No. 5
-Update and delete elements in dictionary
+**Update and delete elements in dictionary**
 ```python
 europe = {'spain':'madrid', 'france':'paris', 'germany':'bonn',
           'norway':'oslo', 'italy':'rome', 'poland':'warsaw',
@@ -93,7 +93,7 @@ Result:
 ```
 ---
 ### No. 6
-Dictionary of Dictionaries
+**Dictionary of Dictionaries**
 ```python
 europe = { 'spain': { 'capital':'madrid', 'population':46.77 },
            'france': { 'capital':'paris', 'population':66.03 },
