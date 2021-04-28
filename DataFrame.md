@@ -1,6 +1,6 @@
 # DataFrame
 ---
-### No. 1
+## No. 1
 **Dictionary to DataFrame**
 ```python
 import pandas as pd
@@ -23,7 +23,7 @@ Result:
 ![image](https://user-images.githubusercontent.com/49611937/116402372-8f507280-a856-11eb-9bfd-83d15e1a33f7.png)
 
 ---
-### No. 2
+## No. 2
 **Changing the Index**
 ```python
 import pandas as pd
@@ -53,7 +53,7 @@ Result:
 ![image](https://user-images.githubusercontent.com/49611937/116402981-3a612c00-a857-11eb-838d-1c5553d5156d.png)
 
 ---
-### No. 3
+## No. 3
 **Dictionary to DataFrame**
 ```python
 import pandas as pd
@@ -73,7 +73,7 @@ After (index is deleted)
 ![image](https://user-images.githubusercontent.com/49611937/116404321-b9a32f80-a858-11eb-8452-371c3d41eec5.png)
 
 ---
-### No. 4
+## No. 4
 **Series vs DataFrame**
 ```python
 #Series
@@ -82,7 +82,7 @@ dataframe = cars[['country']]
 ```
 
 ---
-### No. 5
+## No. 5
 **Subset Rows**
 ```python
 import pandas as pd
@@ -100,7 +100,7 @@ Result:
 ![image](https://user-images.githubusercontent.com/49611937/116406330-bd37b600-a85a-11eb-9461-fb746f4b6d3f.png)
 
 ---
-### No. 6
+## No. 6
 **Subset using loc**
 ```python
 import pandas as pd
@@ -118,7 +118,7 @@ Result:
 ![image](https://user-images.githubusercontent.com/49611937/116408303-d5a8d000-a85c-11eb-9dea-d1542ec23bb0.png)
 
 ---
-### No. 7
+## No. 7
 **Subset using loc**
 ```python
 import pandas as pd
@@ -137,7 +137,7 @@ Result:
 ![image](https://user-images.githubusercontent.com/49611937/116410437-fa9e4280-a85e-11eb-9e7c-61c0d6514897.png)
 
 ---
-### No. 8
+## No. 8
 **Subset using loc**
 ```python
 import pandas as pd
@@ -155,4 +155,26 @@ Result:
 ![image](https://user-images.githubusercontent.com/49611937/116410361-e5c1af00-a85e-11eb-8100-08efdbe2b033.png)
 ![image](https://user-images.githubusercontent.com/49611937/116410437-fa9e4280-a85e-11eb-9e7c-61c0d6514897.png)
 
+---
+## No. 9
+**Double Subsetting**
+```python
+import pandas as pd
 
+cars = pd.read_csv('cars.csv', index_col = 0)
+
+sel = cars[cars['drives_right']]
+
+# The code above is equal to below codes
+#dr = cars['drives_right']
+#sel = cars[dr]
+
+# Print sel
+print(sel)
+```
+Result:
+
+![image](https://user-images.githubusercontent.com/49611937/116425274-5e7b3800-a86c-11eb-938e-7e356baf9793.png)
+
+---
+## No. 10
