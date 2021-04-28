@@ -10,7 +10,7 @@ Import the numpy package as np, so that you can refer to numpy with np.
 Use np.array() to create a numpy array from baseball. Name this array np_baseball.
 Print out the type of np_baseball to check that you got it right.
 
-### Answer
+Answer:
 ```python
 import numpy as np
 
@@ -20,7 +20,7 @@ np_baseball = np.array(baseball)
 # Print out type of np_baseball
 print(type(np_baseball))
 ```
-### The result must be:
+The result must be:
 ```python
 <class 'numpy.ndarray'>
 ```
@@ -29,7 +29,7 @@ print(type(np_baseball))
 ## No. 2
 Find the **BMI (*Body Mass Index*)** of MLB player. Here is the [source](http://wiki.stat.ucla.edu/socr/index.php/SOCR_Data_MLB_HeightsWeights). BMI is **weight(kg) : (height(m)^2)**. 1 inch = 0.0254 m. 1 lb = 0.453592 kg.
 
-### Answer
+Answer:
 ```python
 import numpy as np
 
@@ -46,7 +46,7 @@ print(np_height_m)
 print(np_weight_kg)
 print(bmi)
 ```
-### The result must be:
+The result must be:
 ```python
 [1.8796 1.8796 1.8288 ... 1.905  1.905  1.8542]
 [81.64656 97.52228 95.25432 ... 92.98636 86.18248 88.45044]
@@ -58,7 +58,7 @@ Create a **boolean numpy array**! The element of the array should be *True* if t
 Print the array Light.
 Print out a numpy array with the BMIs of all baseball players whose BMI is below 21. Use Light inside square brackets to do a selection on the bmi array!
 
-### Answer
+Answer:
 ```python
 import numpy as np
 
@@ -78,8 +78,234 @@ print(light)
 # BMIs of all baseball players whose < 21
 print(bmi[light])
 ```
-### The result must be:
+The result must be:
 ```python
 [False False False ... False False False]
 [20.54255679 20.54255679 20.69282047 20.69282047 20.34343189 20.34343189 20.69282047 20.15883472 19.4984471  20.69282047 20.9205219 ]
+```
+
+## No. 4
+
+**Subsetting array** np_weight_lb by printing out the element at index 50.
+Print out a sub-array of np_height_in that contains the elements at index 100 up to and including index 110.
+
+Answer:
+```python
+import numpy as np
+
+np_weight_lb = np.array(weight_lb)
+np_height_in = np.array(height_in)
+
+# Subsetting 
+print(np_weight_lb[50])
+print(np_height_in[100:111])
+```
+The result must be:
+```python
+200
+[73 74 72 73 69 72 73 75 75 73 72]
+```
+
+## No. 5
+
+**Subsetting array** np_weight_lb by printing out the element at index 50.
+Print out a sub-array of np_height_in that contains the elements at index 100 up to and including index 110.
+
+Answer:
+```python
+import numpy as np
+
+np_weight_lb = np.array(weight_lb)
+np_height_in = np.array(height_in)
+
+# Subsetting 
+print(np_weight_lb[50])
+print(np_height_in[100:111])
+```
+The result must be:
+```python
+200
+[73 74 72 73 69 72 73 75 75 73 72]
+```
+
+## No. 6
+
+Use **2 Dimension Array** np.array() to create a 2D numpy array from baseball. Name it np_baseball.
+Print out the type of np_baseball.
+Print out the shape attribute of np_baseball. Use np_baseball.shape.
+
+Answer:
+```python
+import numpy as np
+
+# 4 rows 2 columns
+baseball = [[180, 78.4],
+            [215, 102.7],
+            [210, 98.5],
+            [188, 75.2]]
+
+np_baseball=np.array(baseball)
+
+print(type(np_baseball))
+print(np_baseball.shape)
+```
+The result must be:
+```python
+<class 'numpy.ndarray'>
+(4, 2)
+```
+
+## No. 7
+
+**Select Elements in Array**
+Make a new variable, np_weight_lb, containing the entire second column of np_baseball.
+Print out the 50th row of np_baseball.
+Select the height (first column) of the 124th baseball player in np_baseball and print it out. 
+Array element start from **0**. **[ROWS, COLUMNS]**.
+
+Answer:
+```python
+import numpy as np
+
+np_baseball = np.array(baseball)
+# Select the entire second column of np_baseball: np_weight_lb
+np_weight_lb = np_baseball[:,1]
+
+print(np_baseball)
+print(np_baseball[49,:])
+print(np_baseball[123,0])
+```
+The result must be:
+```python
+[[ 74 180]
+ [ 74 215]
+ [ 72 210]
+ ...
+ [ 75 205]
+ [ 75 190]
+ [ 73 195]]
+ 
+ 
+ [ 70 195]
+ 75
+```
+
+## No. 8
+
+**Math operation in array**.
+You managed to get hold of the changes in height, weight and age of all baseball players. It is available as a 2D numpy array, updated. Add np_baseball and updated and print out the result.
+You want to convert the units of height and weight to metric (meters and kilograms respectively). As a first step, create a numpy array with three values: 0.0254, 0.453592 and 1. Name this array conversion.
+Multiply np_baseball with conversion and print out the result.
+
+Answer:
+```python
+import numpy as np
+
+np_baseball = np.array(baseball)
+conversion = np.array([0.0254, 0.453592, 1])
+
+# Print out product of np_baseball and conversion
+print(np_baseball + updated)
+print(np_baseball * conversion)
+```
+The result must be:
+```python
+[[ 75.2303559  168.83775102  23.99      ]
+ [ 75.02614252 231.09732309  35.69      ]
+ [ 73.1544228  215.08167641  31.78      ]
+ ...
+ [ 76.09349925 209.23890778  26.19      ]
+ [ 75.82285669 172.21799965  32.01      ]
+ [ 73.99484223 203.14402711  28.92      ]]
+ 
+ 
+[[ 1.8796  81.64656 22.99   ]
+ [ 1.8796  97.52228 34.69   ]
+ [ 1.8288  95.25432 30.78   ]
+ ...
+ [ 1.905   92.98636 25.19   ]
+ [ 1.905   86.18248 31.01   ]
+ [ 1.8542  88.45044 27.92   ]]
+```
+
+## No. 9
+
+**Mean, Median, Corrcoef, Std, Random normal in Array**
+
+Answer:
+```python
+# Mean
+np.mean(np_baseball[:,0])
+
+# Median
+np.median(np_baseball[:,0])
+
+# Correlation coefficient
+np.corrcoef(np_basebaball[:,0] , np_baseball[:,1])
+
+# Std
+np.std(np_baseball[:,0])
+
+# Random normal
+height = np.round(np.random.normal(1.75, 0.20, 5000), 2)
+weight = np.round(np.random.normal(60.32, 15, 5000), 2)
+np_city= np.column_stack((height, weight))
+```
+
+## No. 10
+
+**Mean and Median in Array**
+Create numpy array np_height_in that is equal to first column of np_baseball.
+Print out the mean of np_height_in.
+Print out the median of np_height_in.
+
+Answer:
+```python
+import numpy as np
+
+np_height_in = np_baseball[:,0]
+
+print(np.mean(np_height_in))
+print(np.median(np_height_in))
+```
+The result must be:
+```python
+1586.4610837438424
+74.0
+```
+
+## No. 11
+
+**Mean, Median, Std, Corrcoef in Array**
+The code to print out the mean height is already included. 
+Use np.std() on the first column of np_baseball to calculate stddev.
+Do big players tend to be heavier? Use np.corrcoef() to store the correlation between the first and second column of np_baseball in corr. 
+
+Answer:
+```python
+import numpy as np
+
+# mean height (first column)
+avg = np.mean(np_baseball[:,0])
+print("Average: " + str(avg))
+
+# median height
+med = np.median(np_baseball[:,0])
+print("Median: " + str(med))
+
+# standard deviation on height
+stddev = np.std(np_baseball[:,0])
+print("Standard Deviation: " + str(stddev))
+
+# correlation between first and second column
+corr = np.corrcoef(np_baseball[:,0])
+print("Correlation: " + str(corr))
+```
+The result must be:
+```python
+Average: 73.6896551724138
+Median: 74.0
+Standard Deviation: 2.312791881046546
+Correlation: [[1.         0.53153932]
+ [0.53153932 1.        ]]
 ```
