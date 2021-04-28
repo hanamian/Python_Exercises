@@ -4,7 +4,7 @@
 - Easier in finding elements
 - Efficient in insertion, deletion, appending, concatenation
 
-
+---
 ## No. 1
 Import the numpy package as np, so that you can refer to numpy with np.
 Use np.array() to create a numpy array from baseball. Name this array np_baseball.
@@ -25,7 +25,7 @@ The result must be:
 <class 'numpy.ndarray'>
 ```
 
-
+---
 ## No. 2
 Find the **BMI (*Body Mass Index*)** of MLB player. Here is the [source](http://wiki.stat.ucla.edu/socr/index.php/SOCR_Data_MLB_HeightsWeights). BMI is **weight(kg) : (height(m)^2)**. 1 inch = 0.0254 m. 1 lb = 0.453592 kg.
 
@@ -53,6 +53,7 @@ The result must be:
 [23.11037639 27.60406069 28.48080465 ... 25.62295933 23.74810865 25.72686361]
 ```
 
+---
 ## No. 3
 Create a **boolean numpy array**! The element of the array should be *True* if the corresponding baseball player's BMI is below 21. Name the array Light.
 Print the array Light.
@@ -84,6 +85,7 @@ The result must be:
 [20.54255679 20.54255679 20.69282047 20.69282047 20.34343189 20.34343189 20.69282047 20.15883472 19.4984471  20.69282047 20.9205219 ]
 ```
 
+---
 ## No. 4
 
 **Subsetting array** np_weight_lb by printing out the element at index 50.
@@ -106,6 +108,7 @@ The result must be:
 [73 74 72 73 69 72 73 75 75 73 72]
 ```
 
+---
 ## No. 5
 
 **Subsetting array** np_weight_lb by printing out the element at index 50.
@@ -128,6 +131,7 @@ The result must be:
 [73 74 72 73 69 72 73 75 75 73 72]
 ```
 
+---
 ## No. 6
 
 Use **2 Dimension Array** np.array() to create a 2D numpy array from baseball. Name it np_baseball.
@@ -155,6 +159,7 @@ The result must be:
 (4, 2)
 ```
 
+---
 ## No. 7
 
 **Select Elements in Array**
@@ -190,6 +195,7 @@ The result must be:
  75
 ```
 
+---
 ## No. 8
 
 **Math operation in array**.
@@ -228,6 +234,7 @@ The result must be:
  [ 1.8542  88.45044 27.92   ]]
 ```
 
+---
 ## No. 9
 
 **Mean, Median, Corrcoef, Std, Random normal in Array**
@@ -252,6 +259,7 @@ weight = np.round(np.random.normal(60.32, 15, 5000), 2)
 np_city= np.column_stack((height, weight))
 ```
 
+---
 ## No. 10
 
 **Mean and Median in Array**
@@ -274,6 +282,7 @@ The result must be:
 74.0
 ```
 
+---
 ## No. 11
 
 **Mean, Median, Std, Corrcoef in Array**
@@ -310,6 +319,7 @@ Correlation: [[1.         0.53153932]
  [0.53153932 1.        ]]
 ```
 
+---
 ## No. 12
 
 Each element in the lists corresponds to a player. Positions contains strings representing each player's position. The possible positions are: 'GK' (goalkeeper), 'M' (midfield), 'A' (attack) and 'D' (defense). The second list, heights, contains integers representing the height of the player in cm. The first player in the lists is a goalkeeper and is pretty tall (191 cm).
@@ -348,4 +358,67 @@ The result must be:
 ```python
 Median height of goalkeepers: 188.0
 Median height of other players: 181.0
+```
+
+---
+### No. 13
+**Comparison of Array**
+```python
+import numpy as np
+
+my_house = np.array([18.0, 20.0, 10.75, 9.50])
+your_house = np.array([14.0, 24.0, 14.25, 9.0])
+
+# my_house greater than or equal to 18
+print(my_house >= 18)
+
+# my_house less than your_house
+print(my_house < your_house)
+```
+Result:
+```
+[ True  True False False]
+[False  True  True False]
+```
+
+---
+### No. 14
+**OR, AND, NOT**
+```python
+my_kitchen = 18.0
+your_kitchen = 14.0
+
+print(my_kitchen > 10 and my_kitchen < 18)
+print(my_kitchen < 14 or my_kitchen > 17)
+print(my_kitchen*2 < your_kitchen*3)
+```
+Result:
+```
+False
+True
+True
+```
+
+---
+### No. 15
+**np.logical_**
+
+np.logical_or
+np.logical_and
+
+```python
+import numpy as np
+my_house = np.array([18.0, 20.0, 10.75, 9.50])
+your_house = np.array([14.0, 24.0, 14.25, 9.0])
+
+# np.logical_or
+print(np.logical_or(my_house > 18.5, my_house < 10))
+
+# np.logical_and
+print(np.logical_and(my_house < 11, your_house < 11))
+```
+Result:
+```
+[False  True False  True]
+[False False False  True]
 ```
