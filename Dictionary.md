@@ -1,5 +1,5 @@
 # Dictionary
-
+---
 ### No. 1
 Create dictionary
 ```python
@@ -15,7 +15,7 @@ Result:
 ```
 {'norway': 'oslo', 'france': 'paris', 'germany': 'berlin', 'spain': 'madrid'}
 ```
-
+---
 ### No. 2
 Access keys and specific values of dictionary
 ```python
@@ -32,7 +32,7 @@ Result:
 dict_keys(['norway', 'france', 'germany', 'spain'])
 oslo
 ```
-
+---
 ### No. 3
 Add elements in dictionary
 ```python
@@ -50,7 +50,7 @@ Result:
 {'france': 'paris', 'spain': 'madrid', 'norway': 'oslo', 'poland': 'warsaw', 'italy': 'rome', 'germany': 'berlin'}
 rome
 ```
-
+---
 ### No. 4
 Add elements in dictionary
 ```python
@@ -70,7 +70,7 @@ Result:
 True
 rome
 ```
-
+---
 ### No. 5
 Update and delete elements in dictionary
 ```python
@@ -91,9 +91,9 @@ Result:
 ```
 {'france': 'paris', 'spain': 'madrid', 'norway': 'oslo', 'poland': 'warsaw', 'italy': 'rome', 'germany': 'berlin'}
 ```
-
+---
 ### No. 6
-Dictionary od Dictionaries
+Dictionary of Dictionaries
 ```python
 europe = { 'spain': { 'capital':'madrid', 'population':46.77 },
            'france': { 'capital':'paris', 'population':66.03 },
