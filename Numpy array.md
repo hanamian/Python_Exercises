@@ -294,6 +294,12 @@ Answer:
 ```python
 import numpy as np
 
+baseball = [[180, 78.4],
+            [215, 102.7],
+            [210, 98.5],
+            [188, 75.2]]
+np_baseball = np.array(baseball)
+
 # mean height (first column)
 avg = np.mean(np_baseball[:,0])
 print("Average: " + str(avg))
@@ -307,16 +313,16 @@ stddev = np.std(np_baseball[:,0])
 print("Standard Deviation: " + str(stddev))
 
 # correlation between first and second column
-corr = np.corrcoef(np_baseball[:,0])
+corr = np.corrcoef(np_baseball[:,0], np_baseball[:,1])
 print("Correlation: " + str(corr))
 ```
 The result must be:
 ```python
-Average: 73.6896551724138
-Median: 74.0
-Standard Deviation: 2.312791881046546
-Correlation: [[1.         0.53153932]
- [0.53153932 1.        ]]
+Average: 198.25
+Median: 199.0
+Standard Deviation: 14.635146053251399
+Correlation: [[1.         0.95865738]
+              [0.95865738 1.        ]]
 ```
 
 ---
@@ -361,7 +367,7 @@ Median height of other players: 181.0
 ```
 
 ---
-### No. 13
+## No. 13
 **Comparison of Array**
 ```python
 import numpy as np
@@ -382,7 +388,7 @@ Result:
 ```
 
 ---
-### No. 14
+## No. 14
 **OR, AND, NOT**
 ```python
 my_kitchen = 18.0
@@ -400,7 +406,7 @@ True
 ```
 
 ---
-### No. 15
+## No. 15
 **np.logical_**
 
 np.logical_or
