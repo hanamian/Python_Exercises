@@ -203,6 +203,7 @@ Result:
 ---
 ## No. 9 - For in DataFrame
 **xxx.iterrows():**
+
 Lab is label:
 ```
 US
@@ -251,6 +252,28 @@ MOR: 70
 EG: 45
 ```
   
+---
+## No. 10 - For to Add Column
+**.upper()**
+```python
+import pandas as pd
+cars = pd.read_csv('cars.csv', index_col = 0)
 
+for lab, row in car.iterrows():
+    cars.loc[lab, 'COUNTRY'] = row['country'].upper()
 
+print(cars)
+```
+Or we can use this instead of using for looping. 
 
+**.apply(str.upper)**
+```python
+import pandas as pd
+
+cars = pd.read_csv('cars.csv', index_col = 0)
+
+cars["COUNTRY"] = cars["country"].apply(str.upper)
+```
+Result:
+
+![image](https://user-images.githubusercontent.com/49611937/116505043-0d0e8f80-a8e4-11eb-9993-d95a8e176447.png)
