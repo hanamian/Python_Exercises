@@ -1,7 +1,6 @@
 # If Elif Else
 ---
-## No. 1
-If - Else
+## 1. If - Else
 ```python
 room = "kit"
 area = 14.0
@@ -23,8 +22,7 @@ pretty small.
 ```
 
 ---
-## No. 2
-If - Elif - Else
+## 2. If - Elif - Else
 ```python
 area = 14.0
 
@@ -41,7 +39,7 @@ medium size, nice!
 ```
 
 ---
-## No. 3
+## 3.
 Given an integer n, perform the following conditional actions:
 
 If n is odd, print Weird
@@ -63,4 +61,13 @@ input:
 
 output:
 Weird
+```
+
+---
+## 4. IF NOT 
+```python
+z = 55
+
+if not z== 77:
+    print('z bukan 77')
 ```
