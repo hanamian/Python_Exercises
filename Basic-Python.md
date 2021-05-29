@@ -83,4 +83,34 @@ class Menu():
 
 menu1 = Menu()
 ```
+### 6. Escape Character
+```python
+\b : backspace (hapus 1 karakter)
+\t : tab
+\n : new line
+\\ : backslash 
+\' : single quote
+```
+```python
+print("hai 'John'")
+print("hai \"John\", I\'m Hana")
+print("ini backslash \\")
+```
+Result:
+```
+hai 'John'
+hai "John", I'm Hana
+ini backslash \
+```
+### 7. Panjang dan index character
+```python
+x = 'hai hai'
+len(x)
+x.split(' ') #split by space 
+```
+Result:
+```
+7
+['hai', 'hai']
+```
 
