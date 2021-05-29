@@ -104,13 +104,15 @@ ini backslash \
 ```
 ### 7. Panjang dan index character
 ```python
-x = 'hai hai'
+x = 'hai halo'
 len(x)
 x.split(' ') #split by space 
+x.index('halo')
 ```
 Result:
 ```
-7
-['hai', 'hai']
+8
+['hai', 'halo']
+4
 ```
 
